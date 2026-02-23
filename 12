@@ -1,0 +1,5 @@
+exam_data <- data.frame(
+  name=c("A","B","C"),
+  score=c(85,90,78),
+  attempts=c(1,2,1),
+  qualify=c("yes","no","yes")
