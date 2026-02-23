@@ -1,0 +1,6 @@
+boxplot(iris$Sepal.Length)
+hist(iris$Sepal.Length)
+barplot(table(iris$Species))
+plot(iris$Sepal.Length, type="l")
+plot(iris$Sepal.Length, iris$Petal.Length)
+
