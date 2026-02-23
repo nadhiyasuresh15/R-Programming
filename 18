@@ -1,0 +1,9 @@
+data("USArrests")
+summary(USArrests)
+state_max_rape <- rownames(USArrests)[which.max(USArrests$Rape)]
+range(USArrests$Murder)
+cor(USArrests)
+subset(USArrests, Assault > median(Assault))
+subset(USArrests, Murder < quantile(Murder,0.25))
+hist(USArrests$Murder); plot(density(USArrests$Assault))
+pairs(USArrests); barplot(USArrests$UrbanPop)
