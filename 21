@@ -1,0 +1,2 @@
+model <- lm(Sales ~ Spend, data=df)
+predict(model, newdata=data.frame(Spend=100))
