@@ -1,0 +1,8 @@
+library(datasets)
+# If titanic dataset available via Titanic package:
+library(Titanic)
+titanic <- as.data.frame(Titanic)
+barplot(table(titanic$Class, titanic$Survived))
+barplot(table(titanic$Sex, titanic$Survived))
+hist(titanic$Age)
+
