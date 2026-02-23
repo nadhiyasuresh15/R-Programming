@@ -1,0 +1,3 @@
+num <- 36
+factors <- num[ num %% 1:num == 0 ]
+print(factors)
