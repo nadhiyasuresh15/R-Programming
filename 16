@@ -1,0 +1,5 @@
+data("ChickWeight")
+library(reshape2)
+melted <- melt(ChickWeight, id=c("Diet"))
+casted <- dcast(melted, Diet ~ variable, mean)
+
