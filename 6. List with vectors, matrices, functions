@@ -1,0 +1,7 @@
+my_list <- list(
+  vec = 1:5,
+  mat = matrix(1:9, nrow=3),
+  fun = function(x) x^2
+)
+print(my_list)
+
