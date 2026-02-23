@@ -1,0 +1,12 @@
+ # Create 3D array with 3 rows, 4 columns, 2 tables
+arr <- array(1:24, dim=c(3,4,2))
+
+# Add dimension names
+dimnames(arr) <- list(
+  Rows = paste("R",1:3,sep=""),
+  Columns = paste("C",1:4,sep=""),
+  Tables = c("Table1","Table2")
+)
+
+# Display array
+print(arr)
