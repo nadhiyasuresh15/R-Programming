@@ -1,0 +1,18 @@
+# Create vector
+vec <- 1:12
+
+# Convert to 3x2x2 array
+arr2 <- array(vec, dim=c(3,2,2))
+
+# Add names
+dimnames(arr2) <- list(
+  Rows = c("R1","R2","R3"),
+  Columns = c("C1","C2"),
+  Tables = c("T1","T2")
+)
+
+print(arr2)
+
+# Print specific elements
+print(arr2["R2","C1","T1"])   # Single element
+print(arr2[ , "C2", "T2"])   # Entire column in Table 2
